@@ -30,10 +30,19 @@ public static void resettingBoard()
 		if(toss == 0)
 		{
 			System.out.println("Player won the toss.....");
+         System.out.println("choose your option.....1)0 or 2)X");
+         Scanner sc=new Scanner(System.in);
+         String choice=sc.next();
+         if(choice.equalsIgnoreCase("X"))
+         System.out.println("You have decided to play with X");
+         else
+            System.out.println("You have decided to play with 0");
 		}
 		else
 		{
 			System.out.println("Computer won the toss...");
+         System.out.println("computer got 0 here");
 		}
+
 	}
 }
