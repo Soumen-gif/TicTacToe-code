@@ -5,8 +5,9 @@ static Random random=new Random();
 public static void main(String [] args)
 {
 System.out.println("welcome to tic tac toe game");
+System.out.println("see the board before your 1st turn");
   resettingBoard();
-  tossToBegin();
+//  tossToBegin();
 }
 public static void resettingBoard()
 	{
@@ -24,6 +25,7 @@ public static void resettingBoard()
 				System.out.println("---------");
 		}
 	}
+/*
     public static void tossToBegin()
      {
 		int toss = random.nextInt(2);
@@ -44,5 +46,5 @@ public static void resettingBoard()
          System.out.println("computer got 0 here");
 		}
 
-	}
+	} */
 }
