@@ -258,7 +258,69 @@ public class TicTacToe
 
 	}
 
+                   public static int playerWin(String arr[][])
+	{
+		int win = 0;
+		if(arr[0][0] == "X" && arr[0][1] == "X" && arr[0][2] == "X")//FOR 1=2=3=X
+		{
+			System.out.println("YOU HAVE WON THE GAME");
+			win = 1;
+			return win;
 
+		}
+		if(arr[0][0] == "X" && arr [1][0] == "X" && arr[2][0] == "X")//FOR 1=4=7=X
+		{
+			System.out.println("YOU HAVE WON THE GAME");
+			win = 1;
+			return win;
+		}
+
+		if(arr[0][2] == "X" && arr [1][2] == "X"  && arr[2][2] == "X")//FOR 3=6=9=X
+		{
+			System.out.println("YOU HAVE WON THE GAME");
+			win = 1;
+			return win;
+		}
+		if(arr[2][0] == "X" && arr [2][1] == "X" && arr[2][2] == "X")//FOR 7=8=9=X
+		{
+			System.out.println("YOU HAVE WON THE GAME");
+			win = 1;
+			return win;
+		}
+		if(arr[0][0] == "X" && arr [1][1] == "X" && arr[2][2] == "X")//FOR 1=5=9=X
+		{
+			System.out.println("YOU HAVE WON THE GAME");
+			win = 1;
+			return win;
+		}
+		if(arr[2][0] == "X" && arr [1][1] == "X" && arr[0][2] == "X")//FOR 7=5=3=X
+		{
+			System.out.println("YOU HAVE WON THE GAME");
+			win = 1;
+			return win;
+		}
+		if(arr[0][1] == "X" && arr [1][1] == "X" && arr[2][1] == "X")//FOR 2=5=8=X
+		{
+			System.out.println("YOU HAVE WON THE GAME");
+			win = 1;
+			return win;
+		}
+		if(arr[1][0] == "X" && arr [1][1] == "X" && arr[1][2] == "X")//FOR 4=5=6=X
+		{
+			System.out.println("YOU HAVE WON THE GAME");
+			win = 1;
+			return win;
+		}
+		if(arr[0][0] != " " && arr[0][1] != " " && arr[0][2] != " "
+				&& arr[1][0] != " " && arr[1][1] != " "&& arr[1][2]
+						!= " " && arr[2][0] != " "&& arr[2][1] != " " && arr[2][2] != " ")
+		{
+			System.out.println("MATCH IS DROW ");
+			win = 1;
+			return win;
+		}
+		return 0;
+	}
 
 	public static void main(String[] args)
 	{
@@ -269,6 +331,5 @@ public class TicTacToe
 	}
 
 }
-
 
 
