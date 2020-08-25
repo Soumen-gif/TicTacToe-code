@@ -19,20 +19,16 @@
 		static boolean checkLoss=false;
      //Declaring 2D array for getting board.
 		static char[][] arrayBoard=new char[3][3];
-
 		//Using Random class to generate random numbers.
 		static Random r=new Random();
-
 		//Using scanner class to get desire input.
 		static Scanner sc=new Scanner(System.in);
-
 		//To generate random number.;
 		private static int getRandomNumber() {
 			random=r.nextInt(2);
 			return random;	
 		}
-
-		//To know the letter X or O is assign to me.
+    //To know the letter X or O is assign to me.
 		private static String getLetter() 
 		{
 			randomCheck=getRandomNumber();
