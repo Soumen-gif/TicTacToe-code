@@ -18,8 +18,7 @@
 		static int computerCount=0;
 		static boolean checkWin=false;
 		static boolean checkLoss=false;
-
-		//Declaring 2D array for getting board.
+     //Declaring 2D array for getting board.
 		static char[][] arrayBoard=new char[3][3];
 
 		//Using Random class to generate random numbers.
